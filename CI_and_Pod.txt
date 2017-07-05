@@ -1,0 +1,32 @@
+git init
+Initialized empty Git repository in /Users/smartsuny/study/iOS/fast/FastcampusFrame2/.git/
+
+git add .
+
+git commit -am "Initial commit"
+
+// .ssh 가 없어서 에러 발생 
+git remote add origin git@github.com:sean-jeong/SeanFrame.git
+git push origin master -u
+
+git remote set-url origin https://github.com/sean-jeong/SeanFrame.git
+git push origin master 
+
+
+command line - xcode build and test 
+xcodebuild test -project "FastcampusFrame2.xcodeproj" -scheme "FastcampusFrame2" -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3.1" ... 
+
+
+cocoa pod 
+---------------------------
+
+pod trunk register smartsuny@me.com "Sean Jeong"
+pod trunk me
+// spec 작성 
+sublime SeanFrame.podspec 
+// spec 확인 
+pod lib lint
+
+
+
+
